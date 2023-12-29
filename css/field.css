@@ -1,0 +1,303 @@
+
+.monopoly-board{
+    width: 95%;
+    aspect-ratio: 1/1;
+    background-color: lightgrey;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 14% 7% 7% 7% 7% 7% 7% 7% 7% 7% 14%;
+    grid-template-rows: 14% 7% 7% 7% 7% 7% 7% 7% 7% 7% 14%;
+    grid-template-areas:
+            "parking kentucky chance_blue indiana illinois bno_rail atlantic vetinor water marvin to_jail"
+            "newyork topleft . . . . . . . . pacific"
+            "tennessee . . . . . . . . . ncarolina"
+            "chest1 . . . . . . . . . chest2"
+            "stjames . . . . . . . . . pennsylvania"
+            "pennsylvania_rail . . . . button . . . . short_rail"
+            "virginia . . . . . . . . . chance_yel"
+            "states . . . . . . . . . park"
+            "electric . . . . . . . . . luxury_tax"
+            "stcharles . . . . . . . . bottomright boardwalk"
+            "jail connecticut vermont chance_pur oriental reading_rail income_tax baltic chest3 mediterranean start";
+    gap: 0.9%;
+    padding-bottom: 1%;
+}
+
+#player_board{
+    position: absolute;
+    background: none;
+    z-index: 500;
+}
+
+.monopoly_card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 1/2;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: small;
+    border: 1px solid black;
+}
+
+.angle{
+    width: 50%;
+    border: none;
+}
+
+.card_container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: xx-large;
+    background-color: lightgrey;
+    height: auto;
+}
+
+.card_symbol{
+    margin: auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.angle .card_symbol{
+    font-size: xxx-large;
+}
+
+.top_line{
+    margin-top: 5%;
+    transform: rotate(180deg);
+}
+
+.left_line{
+    width: 50%;
+    margin-top: -25%;
+    margin-left: 8%;
+    transform: rotate(90deg);
+}
+
+.right_line{
+    width: 50%;
+    margin-top: -23%;
+    margin-right: 8%;
+    transform: rotate(-90deg);
+}
+
+.bottom_line{
+    margin-bottom: auto;
+}
+
+#parking{
+    grid-area: parking;
+    transform: rotate(135deg);
+}
+
+#kentucky{
+    background-color: crimson;
+    color: beige;
+    grid-area: kentucky;
+}
+
+#indiana{
+    background-color: crimson;
+    color: beige;
+    grid-area: indiana;
+}
+
+#illinois{
+    background-color: crimson;
+    color: beige;
+    grid-area: illinois;
+}
+
+#chance_blue{
+    color: darkblue;
+    grid-area: chance_blue;
+}
+
+#bno_rail{
+    grid-area: bno_rail;
+}
+
+#atlantic{
+    background-color: yellow;
+    grid-area: atlantic;
+}
+
+#vetinor{
+    background-color: yellow;
+    grid-area: vetinor;
+}
+
+#water{
+    grid-area: water;
+}
+
+#marvin{
+    background-color: yellow;
+    grid-area: marvin;
+}
+
+#to_jail{
+    grid-area: to_jail;
+    transform: rotate(225deg);
+}
+
+#newyork{
+    background-color: orangered;
+    color: beige;
+    grid-area: newyork;
+}
+
+#tennessee{
+    background-color: orangered;
+    color: beige;
+    grid-area: tennessee;
+}
+
+#chest1{
+    grid-area: chest1;
+}
+
+#stjames{
+    background-color: orangered;
+    color: beige;
+    grid-area: stjames;
+}
+
+#pennsylvania_rail{
+    grid-area: pennsylvania_rail;
+}
+
+#virginia{
+    background-color: magenta;
+    color: beige;
+    grid-area: virginia;
+}
+
+#states{
+    background-color: magenta;
+    color: beige;
+    grid-area: states;
+}
+
+#electric{
+    grid-area: electric;
+}
+
+#stcharles{
+    background-color: magenta;
+    color: beige;
+    grid-area: stcharles;
+}
+
+#jail{
+    grid-area: jail;
+    rotate: 45deg;
+}
+
+#pacific{
+    background-color: greenyellow;
+    grid-area: pacific;
+}
+
+#ncarolina{
+    background-color: greenyellow;
+    grid-area: ncarolina;
+}
+
+#chest2{
+    grid-area: chest2;
+}
+
+#pennsylvania{
+    background-color: greenyellow;
+    grid-area: pennsylvania;
+}
+
+#short_rail{
+    grid-area: short_rail;
+}
+
+#chance_yel{
+    color: orangered;
+    grid-area: chance_yel;
+}
+
+#park{
+    background-color: darkblue;
+    color: beige;
+    grid-area: park;
+}
+
+#luxury_tax{
+    grid-area: luxury_tax;
+}
+
+#boardwalk{
+    background-color: darkblue;
+    color: beige;
+    grid-area: boardwalk;
+}
+
+#start{
+    rotate: -45deg;
+    grid-area: start;
+}
+
+#connecticut{
+    background-color: plum;
+    grid-area: connecticut;
+}
+
+#vermont{
+    background-color: plum;
+    grid-area: vermont;
+}
+
+#chance_pur{
+    color: purple;
+    grid-area: chance_pur;
+}
+
+#oriental{
+    background-color: plum;
+    grid-area: oriental;
+}
+
+#reading_rail{
+    grid-area: reading_rail;
+}
+
+#income_tax{
+    grid-area: income_tax;
+}
+
+#baltic{
+    background-color: saddlebrown;
+    color: beige;
+    grid-area: baltic;
+}
+
+#chest3{
+    grid-area: chest3;
+}
+
+#mediterranean{
+    background-color: saddlebrown;
+    color: beige;
+    grid-area: mediterranean;
+}
+
+.anchor_div{
+    display: marker;
+}
+
+#topleft{
+    grid-area: topleft;
+}
+
+#bottomright{
+    grid-area: bottomright;
+}

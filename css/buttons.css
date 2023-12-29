@@ -1,0 +1,7 @@
+button{
+    grid-area: button;
+}
+
+#dice_button{
+    background-color: plum;
+}

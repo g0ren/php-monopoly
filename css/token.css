@@ -1,0 +1,10 @@
+.token{
+    height: 200px;
+    aspect-ratio: 1/1;
+    display: block;
+    position: absolute;
+    font-size: 10vw;
+    background: none;
+    z-index: 1000;
+    text-shadow: 10px 10px 20px black;
+}
